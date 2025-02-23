@@ -31,16 +31,6 @@ document.addEventListener("DOMContentLoaded", function () {
       "-=0.4"
     )
     .from(
-      ".hero_datas .white_btn",
-      {
-        duration: 0.8,
-        opacity: 0,
-        y: -20,
-        ease: "power2.out",
-      },
-      "-=0.4"
-    )
-    .from(
       ".box_hero img",
       {
         duration: 0.8,
