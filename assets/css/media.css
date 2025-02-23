@@ -57,6 +57,9 @@
   .hero {
     height: 50dvh;
   }
+  .hero_datas {
+    gap: 10px;
+  }
   .hero_datas h1 {
     font-size: 14vw;
   }
