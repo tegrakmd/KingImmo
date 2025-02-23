@@ -139,4 +139,12 @@
   .recently {
     margin-bottom: 100px;
   }
+  .bed_room,
+  .leaving_room,
+  .shower,
+  .cuissine,
+  .toillete,
+  .pieces {
+    font-size: 15px;
+  }
 }

@@ -522,7 +522,7 @@ i {
 .pieces {
   font-family: Poppins;
   color: #807e7e;
-  font-size: 12px;
+  font-size: 18px;
   font-weight: 500;
   display: flex;
   align-items: center;
@@ -588,5 +588,6 @@ i {
   display: flex;
   align-items: center;
   gap: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  font-size: 20px;
 }
