@@ -1,0 +1,2 @@
+import "./smoothscroll";
+import "./loadimg";

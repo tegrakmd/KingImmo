@@ -1,0 +1,142 @@
+/*  */
+@media (max-width: 1400px) {
+  section.hero_projet {
+    margin-bottom: 0;
+  }
+  .box_details {
+    display: none;
+  }
+  .section_box_details {
+    display: block;
+  }
+  .section_box_details .section_element_details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 5px;
+  }
+  .element_detail {
+    width: 100%;
+  }
+  .box_details {
+    width: 100%;
+    aspect-ratio: 1/1;
+  }
+  .element_detail_icons i {
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  html {
+    font-size: calc(100vw / 900 * 10);
+  }
+  /*  */
+
+  /*  */
+  .holo_left {
+    width: 600px;
+    height: auto;
+    aspect-ratio: 0;
+  }
+  .holo_right {
+    margin-left: -50px;
+    width: 500px;
+  }
+  .hero_datas h1 {
+    font-size: 8vw;
+  }
+}
+@media (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+  /*  */
+  section.hero_projet {
+    height: 50dvh;
+  }
+  /*  */
+  .hero {
+    height: 50dvh;
+  }
+  .hero_datas h1 {
+    font-size: 14vw;
+  }
+  .hero_text,
+  .hero_datas span p {
+    font-size: 14px;
+  }
+  .box_hero img {
+    border-radius: 6px;
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .section_box_details .section_element_details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /*  */
+
+  /*  */
+  section.desc {
+    height: 50dvh;
+  }
+  section.holo {
+    flex-direction: column-reverse;
+    height: 100dvh;
+  }
+  .holo_right,
+  .holo_left {
+    margin-left: unset;
+    width: 100%;
+    box-shadow: unset;
+  }
+  .holo_img {
+    height: 100%;
+    width: 100%;
+    border-radius: 0;
+    aspect-ratio: 0;
+  }
+  .holo_right p {
+    font-size: 15px;
+    color: #807e7e;
+    margin-top: 10px;
+  }
+  .text_backgr p {
+    font-size: 15px;
+    color: #807e7e;
+  }
+  /*  */
+  .text_backgr {
+    position: absolute;
+    right: 20%;
+    z-index: 3;
+    bottom: 100px;
+    width: 450px;
+    background-color: #f1f1f1;
+    box-shadow: 0 32px 88px rgba(0, 0, 0, 0.24);
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+  }
+  .text_backgr h6 {
+    font-size: 15px;
+  }
+  .backgr {
+    background: url(../images/img2.jpg) no-repeat center center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+    padding: 20px 5%;
+    height: 100dvh;
+  }
+  .backgr_img {
+    display: none;
+  }
+  .text_backgr {
+    position: unset;
+    min-width: 300px;
+    padding: 20px;
+  }
+  .recently {
+    margin-bottom: 100px;
+  }
+}
