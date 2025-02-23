@@ -508,7 +508,7 @@ i {
 .place i {
   display: flex;
   align-items: center;
-  color: tomato;
+  color: #807e7e;
 }
 .place p {
   font-size: 12px;
@@ -522,7 +522,7 @@ i {
 .pieces {
   font-family: Poppins;
   color: #807e7e;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 500;
   display: flex;
   align-items: center;
