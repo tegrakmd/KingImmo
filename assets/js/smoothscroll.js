@@ -11,9 +11,9 @@ const lenis = new Lenis();
 lenis.on("scroll", ScrollTrigger.update);
 
 // Synchroniser GSAP avec Lenis
-gsap.ticker.add((time) => {
-  lenis.raf(time * 2000);
-});
+// gsap.ticker.add((time) => {
+//   lenis.raf(time * 2000);
+// });
 function raf(time) {
   lenis.raf(time);
   requestAnimationFrame(raf);
