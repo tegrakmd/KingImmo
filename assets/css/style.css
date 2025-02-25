@@ -4,10 +4,8 @@ html {
 body {
   width: 100%;
   height: 100%;
-
   font-family: Poppins;
   min-width: 300px;
-
   background-color: #fff;
 }
 
@@ -20,8 +18,7 @@ a {
   font-size: 12px;
 }
 .card-reveal {
-  will-change: transform;
-  transform: translate(calc(var(--x) * 1px), calc(var(--y) * 1px));
+  will-change: transform, opacity;
 }
 
 /* variable */
@@ -456,6 +453,7 @@ section.holo {
   flex-direction: column;
   justify-content: end;
   overflow: hidden;
+  will-change: transform;
 }
 .card_img {
   z-index: -1;

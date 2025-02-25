@@ -1,2 +1,0 @@
-import "./smoothscroll";
-import "./loadimg";
