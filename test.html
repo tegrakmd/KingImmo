@@ -1,0 +1,55 @@
+<style>
+  /* CSS pour les transitions de survol */
+  .card-reveal:hover {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+
+  /* Classe pour désactiver les transitions CSS */
+  .no-hover-transition {
+    transition: none !important;
+  }
+</style>
+<script>
+  // ... existing code ...
+
+  const disableHoverTransitions = (element) => {
+    element.classList.add("no-hover-transition");
+  };
+
+  const enableHoverTransitions = (element) => {
+    element.classList.remove("no-hover-transition");
+  };
+
+  const revealCard = () => {
+    const projectCards = document.querySelectorAll(".card-reveal");
+    if (projectCards.length === 0) return;
+
+    gsap.set(projectCards, { y: 100, opacity: 0 });
+
+    projectCards.forEach((card) => {
+      disableHoverTransitions(card); // Désactiver les transitions CSS
+
+      gsap.to(card, {
+        scrollTrigger: {
+          trigger: card,
+          start: "top 85%",
+          end: "top 65%",
+          scrub: 1.5,
+          toggleActions: "play none none reverse",
+          onEnter: () => disableHoverTransitions(card),
+          onLeave: () => enableHoverTransitions(card),
+          onEnterBack: () => disableHoverTransitions(card),
+          onLeaveBack: () => enableHoverTransitions(card),
+        },
+        y: 0,
+        opacity: 1,
+        ease: "power2.out",
+        onComplete: () => enableHoverTransitions(card), // Réactiver les transitions CSS
+      });
+    });
+  };
+
+  // ... existing code ...
+</script>

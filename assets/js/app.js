@@ -4,7 +4,6 @@ let lenis;
 const initLenis = () => {
   const lenis = new Lenis({
     lerp: 0.05,
-    // Infinity: true,
   });
   lenis.on("scroll", ScrollTrigger.update);
   gsap.ticker.add((time) => {
@@ -12,10 +11,13 @@ const initLenis = () => {
   });
   gsap.ticker.lagSmoothing(0);
 };
+
 const revealCard = () => {
   const projectCards = document.querySelectorAll(".card-reveal");
+  if (projectCards.length === 0) return;
+
   gsap.set(projectCards, { y: 100, opacity: 0 });
-  // Créer une animation pour chaque carte
+
   projectCards.forEach((card) => {
     gsap.to(card, {
       scrollTrigger: {
@@ -31,6 +33,7 @@ const revealCard = () => {
     });
   });
 };
+
 const textReveal = () => {
   const tl = gsap.timeline();
 
@@ -71,7 +74,7 @@ const textReveal = () => {
       "-=0.4"
     );
 };
-//
+
 window.addEventListener("DOMContentLoaded", () => {
   initLenis();
   textReveal();
