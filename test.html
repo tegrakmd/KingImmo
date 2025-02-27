@@ -53,3 +53,85 @@
 
   // ... existing code ...
 </script>
+<script>
+  [
+    {
+      id: 1,
+      title: "Maison",
+      price: "1200",
+      location: "Lubumbashi",
+      neighborhood: "Golf Malela",
+      details: {
+        bedroom: 4,
+        livingroom: 4,
+        bathroom: 4,
+        toilet: 5,
+        kitchen: 5,
+        pieces: 9,
+        terrain: "1200m",
+        price: "1200$",
+      },
+      images: [
+        "../../assets/images/bg1.jpg",
+        "../../assets/images/img3.jpg",
+        "../../assets/images/img1.jpg",
+        "../../assets/images/img2.jpg",
+      ],
+    },
+    // Ajoutez d'autres objets pour chaque page
+  ];
+</script>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ... existing code ... -->
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const pageId = 1; // Remplacez par l'index de la page actuelle
+        fetch("../../assets/data/data.json")
+          .then((response) => response.json())
+          .then((data) => {
+            const pageData = data.find((item) => item.id === pageId);
+            if (pageData) {
+              document.querySelector(".name_article").textContent =
+                pageData.title;
+              document.querySelector(
+                ".desc_article"
+              ).innerHTML = `${pageData.price}<i class="ph ph-currency-dollar-simple"></i>`;
+              document.querySelector(
+                ".data_hero_wrapper p:nth-child(3)"
+              ).textContent = pageData.location;
+              document.querySelector(
+                ".data_hero_wrapper p:nth-child(4)"
+              ).textContent = pageData.neighborhood;
+              // Mettez à jour les détails
+              const details = pageData.details;
+              document.querySelector(".element_details").innerHTML = `
+                <li class="element_detail">
+                  <span class="element_detail_name">Bedroom</span>
+                  <span class="element_detail_icons"><i class="ph ph-bed"></i>${details.bedroom}</span>
+                </li>
+                <!-- Ajoutez les autres détails de la même manière -->
+              `;
+              // Mettez à jour les images
+              const gallery = document.querySelector(".gallery");
+              gallery.innerHTML = pageData.images
+                .map(
+                  (src) => `
+                <div class="photo-card card-reveal">
+                  <img src="${src}" alt="Description photo" loading="lazy" />
+                </div>
+              `
+                )
+                .join("");
+            }
+          })
+          .catch((error) => console.error("Error loading JSON data:", error));
+      });
+    </script>
+  </head>
+  <body>
+    <!-- ... existing code ... -->
+  </body>
+</html>

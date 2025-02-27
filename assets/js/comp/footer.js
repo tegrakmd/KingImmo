@@ -26,10 +26,10 @@ class FooterComponent extends HTMLElement {
                 <div>
                   <h4>Company</h4>
                   <ul>
-                    <li><a href="${basePath}">King Immo</a></li>
-                    <li><a href="${basePath}/src/about.html">About</a></li>
-                    <li><a href="${basePath}/src/about.html">services</a></li>
-                    <li><a href="${basePath}/src/proj/allpro.html">immobiliers</a></li>
+                    <li><a href="${basePath}">KING IMMO</a></li>
+                    <li><a href="${basePath}/src/about.html">A PROPOS DE NOUS</a></li>
+                    <li><a href="${basePath}/src/about.html">SERVICES</a></li>
+                    <li><a href="${basePath}/src/proj/allpro.html">IMMOBILIERS</a></li>
                   </ul>
                 </div>
                 <div>

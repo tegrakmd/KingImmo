@@ -74,76 +74,6 @@ section {
 
 /* NAV */
 /* NAV LINKS */
-.nav_menu {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 30;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  padding: 20px;
-  font-family: Poppins;
-  mix-blend-mode: difference;
-}
-.header_nav {
-  width: 100%;
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  color: #fff;
-  width: 1200px;
-}
-.logo a {
-  font-weight: 400;
-  color: #fff;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: 25px;
-  font-style: italic;
-  font-family: lemon;
-  cursor: pointer;
-}
-
-.nav_links {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  gap: 2rem;
-
-  display: none;
-}
-.open {
-  background-color: #fff;
-  padding: 5px 8px;
-  border-radius: 2px;
-}
-.open span {
-  font-size: 15px;
-  cursor: pointer;
-  color: #000;
-  font-weight: 500;
-}
-.nav_links li a {
-  color: #fff;
-  position: relative;
-  font-size: 12px;
-}
-.nav_links li a:after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  background-color: tomato;
-  height: 4px;
-  width: 0%;
-  border-radius: 4px;
-  transition: 0.4s;
-}
-.nav_links li a:hover:after {
-  width: 100%;
-}
 /*  */
 section.hero {
   height: 100dvh;
@@ -255,6 +185,8 @@ section.desc h2 {
 }
 /*  */
 section.holo {
+  background-color: gray;
+  background: url(../images/img2.jpg) no-repeat center center / cover;
   height: 100%;
   display: flex;
   align-items: center;
@@ -298,7 +230,6 @@ section.holo {
 .holo_title {
   text-transform: uppercase;
   font-size: 14px;
-
   position: relative;
   width: fit-content;
   font-family: Poppins;
@@ -373,7 +304,10 @@ section.holo {
   z-index: 1;
   bottom: -100px;
   width: 450px;
-  background-color: #f1f1f1;
+  /* background-color: #f1f1f1; */
+  background-color: #f1f1f16a;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(20px);
   box-shadow: 0 32px 88px rgba(0, 0, 0, 0.24);
   padding: 45px;
   display: flex;

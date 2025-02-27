@@ -12,19 +12,24 @@
   </head>
   <body>
     <!-- nav -->
-    <nav class="nav_menu">
-      <header class="header_nav">
-        <div class="logo"><a href="#">King Immo</a></div>
-        <div class="open"><span>Menu</span></div>
-        <!-- <div class="close">Close</div> -->
-        <ul class="nav_links">
-          <li class="nav_link_item"><a href="#">Home</a></li>
-          <li class="nav_link_item"><a href="#">About</a></li>
-          <li class="nav_link_item"><a href="#">Articles</a></li>
-          <li class="nav_link_item"><a href="#">Contact</a></li>
-        </ul>
-      </header>
-    </nav>
+    <div class="fluid-nav_component">
+      <div class="fluid-nav_menu">
+        <div class="fluid-nav_menu-component">
+          <a href="#" class="nav-item logo">
+            <div class="fluid-nav_btn">KING IMMO</div>
+          </a>
+          <a href="#" class="nav-item">
+            <div class="fluid-nav_btn">INDEX</div>
+          </a>
+          <a href="./src/about.html" class="nav-item">
+            <div class="fluid-nav_btn">A PROPOS</div>
+          </a>
+          <a href="./src/proj/allpro.html" class="nav-item">
+            <div class="fluid-nav_btn">IMMOBILIERS</div>
+          </a>
+        </div>
+      </div>
+    </div>
     <main class="app">
       <!-- section_hero -->
       <section class="hero">
@@ -32,14 +37,14 @@
           <!-- desc -->
           <div class="hero_datas">
             <span class="btn-grad">
-              <p>5th Best of the Year</p>
+              <p>King Immo</p>
             </span>
-            <h1 class="hero_title">Agence immobilière <br />Solution</h1>
-            <p class="hero_text">
-              A descriptive paragraph that tells clients how good you are and
-              proves that you are the best choice.
-            </p>
-            <button class="white_btn">See more houses</button>
+            <h1 class="hero_title">
+              Agence <br />
+              immobilière
+            </h1>
+            <p class="hero_text">Votre partenaire ideal des bonnes affaires!</p>
+            <button class="white_btn">VOIR PLUS</button>
           </div>
           <!-- box hero -->
           <div class="box_hero">
@@ -48,21 +53,12 @@
         </div>
       </section>
       <!--  -->
-      <!-- HERO description -->
-      <section class="desc">
-        <p>KING IMMO</p>
-        <h2>
-          King immo Agency Doesn't to <br />
-          be Expensive or Complicated it should Be Smart & User Friendly
-        </h2>
-      </section>
-      <!--  -->
       <!-- HERO SECTION MAISON-->
       <section class="recently">
         <div class="header">
           <h2>Recently</h2>
           <a href="/src/proj/allpro.html">
-            <button class="btn-grad">See More</button>
+            <button class="btn-grad">VOIR PLUS</button>
           </a>
         </div>
         <!--  -->
@@ -192,12 +188,16 @@
       <!-- HERO SECTION SERVICES -->
       <div class="backgr">
         <div class="text_backgr card-reveal">
-          <span>OUR SERVICES</span>
+          <span>NOS SERVICES</span>
           <!-- <h3>SERVICES</h3> -->
-          <p>
-            Find inuque stays, unforgettable experiences,and endless
-            exploration-where wnaterlust meets wonder, adventure,and discovery.
-          </p>
+          <h6>
+            <i class="ph-fill ph-arrow-elbow-down-right"></i>Construction et
+            Genie civile En parternariat avec (KMES).
+          </h6>
+          <h6>
+            <i class="ph-fill ph-arrow-elbow-down-right"></i>Procedure de
+            location l'obtention des documents parcellaires.
+          </h6>
           <h6>
             <i class="ph-fill ph-arrow-elbow-down-right"></i>Achat ,Vente et
             location des terrains et maisons.
@@ -221,20 +221,26 @@
           <img src="./assets/images/im2/2.jpg" alt="img2" />
         </div>
       </div>
+      <!-- HERO description -->
+      <section class="desc">
+        <p>KING IMMO</p>
+        <h2>Votre partenaire ideal des bonnes affaires!</h2>
+      </section>
+      <!--  -->
       <!-- SECTION ABOUT-->
       <section class="holo">
         <div class="holo_left holo_img card-reveal">
           <img src="./assets/images/im2/1.jpg" alt="" />
         </div>
         <div class="holo_right card-reveal">
-          <h2 class="holo_title">ABOUT US</h2>
-          <h3 class="holo-big_title">King Immo firm Based in Lubumbashi</h3>
+          <h2 class="holo_title">A PROPOS DE NOUS</h2>
+          <h3 class="holo-big_title">King Immo Based in Lubumbashi</h3>
           <p>
             Chez King Immo nous sommes specilises dans l'immobilier,offrant des
             solutions innoventers et durables pour tous cos projets.
           </p>
           <button class="btn-grad">
-            <a href="./src/about.html">know more</a>
+            <a href="./src/about.html">VOIR PLUS</a>
           </button>
         </div>
       </section>
