@@ -13,6 +13,7 @@ section.about {
 }
 .ab .text_backgr p {
   text-align: justify;
+  font-size: 14px;
 }
 .about h3 {
   font-size: 25px;
@@ -41,7 +42,7 @@ section.about {
   font-size: 20px;
   max-width: 800px;
   width: 100%;
-  line-height: 1;
+  line-height: 1.2;
 }
 .about_right {
   color: gray;
@@ -62,7 +63,7 @@ section.about {
   display: flex;
   gap: 2rem;
   line-height: 1;
-  background: #e0e0e0d5;
+  background: #e0e0e0b6;
   padding: 2rem;
   cursor: pointer;
 }
@@ -123,7 +124,9 @@ section.about {
 }
 .footer_team_card {
   width: 100%;
-  background-color: white;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.203);
+
   padding: 1rem 2rem;
   border-radius: 4px;
   z-index: 2;
@@ -162,6 +165,11 @@ section.about {
 
   section.ab {
     height: 80dvh;
+  }
+  .about p {
+    font-size: 15px;
+    line-height: 1.2;
+    font-weight: 400;
   }
   .team_wrapper {
     max-width: 100%;

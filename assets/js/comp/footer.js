@@ -40,13 +40,7 @@ class FooterComponent extends HTMLElement {
                     <li><a href="#">Community rules</a></li>
                   </ul>
                 </div>
-                <div>
-                  <h4>Job board</h4>
-                  <ul>
-                    <li><a href="#">Join the collective</a></li>
-                    <li><a href="#">Hire a 10x Designer</a></li>
-                  </ul>
-                </div>
+               
               </div>
             </div>
           </div>
@@ -74,17 +68,17 @@ class FooterComponent extends HTMLElement {
             <div class="social-links bo">
               <div class="social_img">
                 <a href="#"
-                  ><img src="./assets/images/logo-1.svg" alt="Twitter"
+                  ><img src="../../assets/images/logo-1.svg" alt="Twitter"
                 /></a>
               </div>
               <div class="social_img">
                 <a href="#"
-                  ><img src="./assets/images/logo-2.svg" alt="Twitter"
+                  ><img src="../../assets/images/logo-2.svg" alt="Twitter"
                 /></a>
               </div>
               <div class="social_img">
                 <a href="#"
-                  ><img src="./assets/images/logo-3.svg" alt="Twitter"
+                  ><img src="../../assets/images/logo-3.svg" alt="Twitter"
                 /></a>
               </div>
             </div>
@@ -96,5 +90,13 @@ class FooterComponent extends HTMLElement {
         `;
   }
 }
-
 customElements.define("footer-component", FooterComponent);
+{
+  /* <div>
+<h4>Job board</h4>
+<ul>
+  <li><a href="#">Join the collective</a></li>
+  <li><a href="#">Hire a 10x Designer</a></li>
+</ul>
+</div> */
+}

@@ -314,7 +314,7 @@ section.holo {
   flex-direction: column;
 }
 .text_backgr span {
-  font-weight: bold;
+  font-weight: 500;
   margin-bottom: 12px;
   letter-spacing: -2px;
 }
