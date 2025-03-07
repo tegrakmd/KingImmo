@@ -93,6 +93,8 @@
   background-color: white;
   border-radius: 4px;
   display: grid;
+  border: none;
+  outline: none;
   place-content: center;
   padding: 20px;
   gap: 8px;
@@ -116,10 +118,12 @@
 
 .nav-toggle-btn.active .line-1 {
   transform: rotate(45deg) translate(4px, 4px);
+  background-color: #000;
 }
 
 .nav-toggle-btn.active .line-2 {
   transform: rotate(-45deg) translate(3px, -2px);
+  background-color: #000;
 }
 /*  */
 .navbar {
@@ -128,11 +132,11 @@
   right: -50%;
   width: 100%;
   transform: translate(-50%, -50%);
-
+  /*  */
   -webkit-backdrop-filter: blur(35px);
   backdrop-filter: blur(35px);
   background-color: rgba(255, 255, 255, 0.548);
-
+  /*  */
   height: 100vh;
   display: flex;
   align-items: center;
