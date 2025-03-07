@@ -10,7 +10,7 @@ class FooterComponent extends HTMLElement {
         <div class="bos">
           <div class="bo_left">
             <div class="newsletter bo">
-              <h3>Join our newsletter</h3>
+              <h3>Rejoignez notre newslette</h3>
               <div class="newsletter-form">
                 <input type="email" placeholder="Email" />
                 <button class="btn-grad">Subscribe</button>
@@ -18,13 +18,13 @@ class FooterComponent extends HTMLElement {
             </div>
             <div class="links links_footer bo">
               <h3>
-                Check out these links <br />
-                before you go
+                  Consultez ces liens <br />
+                avant de partir
               </h3>
               <!--  -->
               <div class="links-columns">
                 <div>
-                  <h4>Company</h4>
+                  <h4>Pages Liens</h4>
                   <ul>
                     <li><a href="${basePath}">KING IMMO</a></li>
                     <li><a href="${basePath}/src/about.html">A PROPOS DE NOUS</a></li>
@@ -49,11 +49,10 @@ class FooterComponent extends HTMLElement {
             <div class="creators bo">
               <h3>For creators <span class="new-badge">NEW</span></h3>
               <p>
-                Do you have a big social media presence, popular newsletter or
-                podcast? Becoming a 10x Affiliate can be a great way to earn
-                passive income!
+                 Vous avez une forte présence sur les réseaux sociaux, une newsletter populaire ou
+                un podcast ? Devenez affilié 10x pour générer un revenu passif facilement !
               </p>
-              <a href="#">Become an affiliate</a>
+              <a href="#">Devenir affilié</a>
               <div class="call_phone">
                 <p>Ousmanejames85@gmail.com</p>
                 <p>peterjonathanngolo6@gmail.com</p>
