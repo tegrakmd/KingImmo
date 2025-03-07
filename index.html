@@ -12,37 +12,75 @@
   </head>
   <body>
     <!-- nav -->
-    <div class="fluid-nav_component">
-      <div class="fluid-nav_menu">
-        <div class="fluid-nav_menu-component">
-          <a href="#" class="nav-item logo">
-            <div class="fluid-nav_btn">KING IMMO</div>
-          </a>
-          <a href="./src/about.html" class="nav-item">
-            <div class="fluid-nav_btn">A PROPOS</div>
-          </a>
-          <a href="./src/proj/allpro.html" class="nav-item">
-            <div class="fluid-nav_btn">IMMOBILIERS</div>
-          </a>
-        </div>
+    <header class="header_nav" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/king immo2.jpg"
+            width="300"
+            height="50"
+            alt="Pfolio home" />
+        </a>
+
+        <button
+          class="nav-toggle-btn"
+          data-nav-toggler
+          data-nav-toggle-btn
+          aria-label="Toggle menu">
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+        </button>
+
+        <!-- <div class="overlay" data-nav-toggler data-overlay></div> -->
       </div>
-    </div>
+    </header>
+
+    <nav class="navbar" data-navbar>
+      <ul class="navbar-list">
+        <li>
+          <a href="#" class="navbar-link">Home</a>
+        </li>
+
+        <li>
+          <a href="./src/about.html" class="navbar-link">About</a>
+        </li>
+
+        <li>
+          <a href="./src/proj/allpro.html" class="navbar-link">Immobiliers</a>
+        </li>
+      </ul>
+      <div class="portrais_menu">
+        <img src="./assets/images/img1.jpg" alt="" />
+      </div>
+    </nav>
     <main class="app">
       <!-- section_hero -->
       <section class="hero">
         <div class="hero_container hero_wrapper">
           <!-- desc -->
           <div class="hero_datas">
-            <span class="btn-grad">
-              <p>King Immo</p>
-            </span>
+            <div class="lol">
+              <span class="btn-grad">
+                <p>King Immo</p>
+              </span>
+              <span class="avatars">
+                <figure>
+                  <img src="./assets/images/king immo2.jpg" alt="" />
+                </figure>
+                <figure>
+                  <img src="./assets/images/im2/2.jpg" alt="" />
+                </figure>
+                <figure><img src="./assets/images/im2/3.jpg" alt="" /></figure>
+              </span>
+            </div>
             <h1 class="hero_title">
               Agence <br />
               immobilière
             </h1>
+
             <p class="hero_text">Votre partenaire ideal des bonnes affaires!</p>
-            <button class="white_btn">VOIR PLUS</button>
           </div>
+          <button class="white_btn">VOIR PLUS</button>
           <!-- box hero -->
           <div class="box_hero">
             <img src="./assets/images/im2/6.jpg" alt="" />
@@ -241,7 +279,6 @@
           </button>
         </div>
       </section>
-      <!-- section -->
     </main>
     <!--  -->
     <footer-component base-path="."></footer-component>
@@ -256,6 +293,6 @@
       src="./assets/js/scriptComp.js"
       type="module"
       defer="defer"></script>
-    <script src="./assets/js/app.js" type="module" defer="defer"></script>
+    <script src="./assets/js/app.js" defer="defer"></script>
   </body>
 </html>

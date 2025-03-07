@@ -11,7 +11,40 @@ const initLenis = () => {
   });
   gsap.ticker.lagSmoothing(0);
 };
+//
 
+/**
+ * add event listener on multiple elements
+ */
+
+const navHeader = () => {
+  /**
+   * NAVBAR
+   * navbar toggle for mobile
+   */
+
+  const addEventOnElements = function (elements, eventType, callback) {
+    for (let i = 0, len = elements.length; i < len; i++) {
+      elements[i].addEventListener(eventType, callback);
+    }
+  };
+  //
+  const navTogglers = document.querySelectorAll("[data-nav-toggler]");
+  const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
+  const navbar = document.querySelector("[data-navbar]");
+  const overlay = document.querySelector("[data-overlay]");
+
+  const toggleNavbar = function () {
+    navbar.classList.toggle("active");
+    navToggleBtn.classList.toggle("active");
+    overlay.classList.toggle("active");
+    document.body.classList.toggle("nav-active");
+  };
+
+  addEventOnElements(navTogglers, "click", toggleNavbar);
+};
+
+//
 const revealCard = () => {
   const projectCards = document.querySelectorAll(".card-reveal");
   if (projectCards.length === 0) return;
@@ -33,7 +66,7 @@ const revealCard = () => {
     });
   });
 };
-
+//
 const textReveal = () => {
   const tl = gsap.timeline();
 
@@ -74,9 +107,11 @@ const textReveal = () => {
       "-=0.4"
     );
 };
-
+//
 window.addEventListener("DOMContentLoaded", () => {
   initLenis();
+
   textReveal();
   revealCard();
+  navHeader();
 });
