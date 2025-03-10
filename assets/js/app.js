@@ -110,7 +110,6 @@ const textReveal = () => {
 //
 window.addEventListener("DOMContentLoaded", () => {
   initLenis();
-
   textReveal();
   revealCard();
   navHeader();

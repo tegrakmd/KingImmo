@@ -9,10 +9,25 @@
     <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script>
     <!-- link css -->
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+      /* Transition de page */
+      .transition-overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #0f172a;
+        opacity: 0;
+        pointer-events: none;
+        z-index: 9999;
+      }
+    </style>
   </head>
   <body>
     <!-- nav -->
     <nav-bar base-path="."></nav-bar>
+    <div class="transition-overlay"></div>
     <main class="app">
       <!-- section_hero -->
       <section class="hero">
@@ -243,6 +258,31 @@
     <!--  -->
     <footer-component base-path="."></footer-component>
     <!-- link js -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Animation de transition
+        const overlay = document.querySelector(".transition-overlay");
+
+        // Fade out au chargement
+        gsap.to(overlay, { duration: 0.5, opacity: 0 });
+
+        // Gestion des clics sur les liens
+        document.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", (e) => {
+            const href = link.getAttribute("href");
+            if ((href && href.startsWith("/")) || href.startsWith(".")) {
+              e.preventDefault();
+              gsap.to(overlay, {
+                duration: 0.5,
+                opacity: 1,
+                onComplete: () => (window.location = href),
+              });
+            }
+          });
+        });
+      });
+    </script>
+    <!--  -->
     <script src="./assets/js/plugins/lenis.min.js" defer="defer"></script>
     <script src="./assets/js/plugins/gsap.min.js" defer="defer"></script>
     <script
@@ -254,5 +294,6 @@
       type="module"
       defer="defer"></script>
     <script src="./assets/js/app.js" defer="defer"></script>
+    <!--  -->
   </body>
 </html>

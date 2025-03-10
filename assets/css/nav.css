@@ -79,11 +79,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 60%;
+  width: 50%;
   margin: 0 auto;
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
-  padding: 2rem;
+  padding: 1rem 2rem;
   z-index: 8;
 }
 
